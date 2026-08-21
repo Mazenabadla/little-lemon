@@ -1,0 +1,43 @@
+.menu .special {
+  padding: 50px 10px 30px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  gap: 40%;
+}
+
+.special button {
+  background-color: gold;
+  border-radius: 10%;
+  height: 35px;
+}
+
+.menu .meals {
+  background-color: rgb(213, 208, 208);
+  padding: 10px;
+  display: flex;
+  gap: 10%;
+}
+
+.meals .meal {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.meals .meal button{
+  background-color: gold;
+}
+.meal .dish{
+  position: relative;
+}
+.meal p{
+  font-size:small;
+}
+.dish span {
+  color: coral;
+  position: absolute;
+  right:10px;
+  top:20px;
+}

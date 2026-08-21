@@ -1,0 +1,61 @@
+.main{
+  background-color: rgb(3, 69, 45);
+  height: 220px;
+  margin-top:30px;
+}
+
+.main .left{
+padding:5px 0 10px 20%;
+width:250px; 
+position: relative; 
+
+}
+.main h2{
+  color:gold;
+  
+
+}
+.main .city{
+    color:white;
+    position: absolute;
+  top:40px;
+
+
+}
+.main .description{
+  width:250px;
+  color:rgb(233, 233, 209);
+  font-size: small;
+  text-align: justify;
+  position: absolute;
+  top:70px;
+}
+.main button{
+  background-color: gold;
+  padding:5px 3px;
+  border-radius: 10%;
+  position: absolute;
+  top:170px;
+  left:20%px;
+
+
+}
+
+.main img{
+  width:20%;
+  height: 250px;
+  position: absolute;
+  top:70px;
+  right:20%;
+}
+
+@media(max-width:768px){
+ 
+.main img{
+  display: none;
+}
+}
+
+
+
+
