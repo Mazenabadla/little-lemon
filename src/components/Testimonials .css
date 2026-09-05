@@ -1,0 +1,49 @@
+h2{
+    color:chocolate;
+    text-align: center;
+    padding-top:20px;
+}
+.testimony{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+
+}
+.testimony .rate{
+    background-color: rgb(82, 78, 10);
+    width:20%;
+    color:beige
+}
+.testimony .rate p,span{
+    display:block;
+    font-size: x-small;
+    text-align: justify;
+    padding:0 10px;
+}
+.testimony .rate img{
+    display: block;
+    width:70%
+}
+
+@media(max-width:768px){
+    .testimony{
+        flex-direction: column;
+    }
+    .testimony .rate{
+        width:90%;
+        position:relative;
+    }
+    .testimony .rate .comment{
+        position:absolute;
+        width:250px;
+        top:100px;
+        right:20px;
+        left:150px;
+        
+    }
+    
+    .testimony .rate img{
+        width:150px;
+        padding: 10px 0;
+    }
+}

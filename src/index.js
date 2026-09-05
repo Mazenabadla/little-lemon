@@ -1,17 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+ import { useState } from 'react';
+ import { createRoot } from 'react-dom/client';
+import { BrowserRouter,Route,Routes} from 'react-router-dom';
+import Home from './components/Home';
+import Header from './components/Header';
+import Main from './components/Main';
+import Menu from './components/Menu';
+import Reservation from './components/Reservation';
+import About from './components/About';
+import Testimonials from './components/Testimonials';
+import Footer from './components/Footer'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+
+function App() {
+    const [activeItem,setActiveItem]=useState(null)
+
+    return (
+        <BrowserRouter>
+            <Header setActiveItem={setActiveItem} />
+            <Main setActiveItem={setActiveItem} />
+            <Menu setActiveItem={setActiveItem} />
+            <Home/>
+            <Reservation activeItem={activeItem} setActiveItem={setActiveItem}/>
+            <About/>
+            <Testimonials/>
+
+            <Footer/>
+            
+            
+        </BrowserRouter>
+    )
+}
+
+
+
+
+createRoot(document.getElementById('root')).render(
     <App />
-  </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
