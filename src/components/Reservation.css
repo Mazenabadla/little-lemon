@@ -24,6 +24,10 @@ p{
 form{
     position: relative;
     left:20px;
+        background-color: rgb(201, 193, 200);
+            width:500px;
+
+
 }
 .submit{
     position: absolute;
@@ -31,7 +35,7 @@ form{
     left:10%;
 
 }
-form input{
+form input,select,textarea{
     display:block;
     width:100%;
 }
