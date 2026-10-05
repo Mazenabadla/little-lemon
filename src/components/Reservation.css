@@ -9,10 +9,13 @@
     left:0;
     z-index: 1000;
 }
-.close{
-    position: absolute;
-    top:0;
-    right:0;
+.onClose{
+    display: none;
+}
+.closing-x{
+    position: fixed;
+    top:20px;
+    right:20px;
 }
 h3{
     text-align: center;

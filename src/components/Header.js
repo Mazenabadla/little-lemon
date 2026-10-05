@@ -7,7 +7,7 @@ import Menu from "./Menu";
 import Reservation from "./Reservation";
 
 
-export default function Header({ setActiveItem }) {
+export default function Header({ onReserveClick }) {
     const [open, setOpen] = useState(true)
 
     return (
@@ -21,9 +21,9 @@ export default function Header({ setActiveItem }) {
 
                     <Link to="/"> Home</Link>
                     <Link to="/about"> About</Link>
-                    <Link to="/reservation" onClick={() => setActiveItem('table')}> Reservation</Link>
-                    <Link to="/order" onClick={() => setActiveItem('order')}> Order online</Link>
-                    <Link to="/Menu" onClick={() => setActiveItem('menu')}> Menu</Link>
+                    <Link to="/reservation" onClick={onReserveClick}> Reservation</Link>
+                    <Link to="/order" > Order online</Link>
+                    <Link to="/Menu" > Menu</Link>
                     <Link to="/login"> Login</Link>
 
                 </nav>
