@@ -14,7 +14,7 @@ export default function Header({ onReserveClick }) {
         <>
             <header>
                 <button className='logo-btn' onClick={() => setOpen(!open)}>
-                    <img src='/little lemon images/logo.jpg' />
+                    <img src='/little lemon images/logo.jpg' alt="logo"/>
                 </button>
                 <nav className={open ? "Nav  " : "hide "}>
 

@@ -10,7 +10,54 @@ import About from './components/About';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
+// window.fetchAPI = function(date) {
+//     let result = [];
+//     let dt = new Date(date);
+//     let seed = dt.getDate();
+
+//     const random = function() {
+//         var x = Math.sin(seed++) * 10000;
+//         return x - Math.floor(x);
+//     };
+
+//     for(let i = 17; i <= 23; i++) {
+//         if(random() < 0.5) { result.push(i + ':00'); }
+//         if(random() < 0.5) { result.push(i + ':30'); }
+//     }
+//     return result;
+// };
+
+// window.submitAPI = function(formData) {
+//     return true;
+// };
+
+
 /* global fetchAPI */
+
+// export const initializeTimes = () => {
+//     const today = new Date().toISOString().split('T')[0];
+//     const allTimes = window.fetchAPI(today);
+//     const storedBookings = JSON.parse(localStorage.getItem('bookings')) || [];
+//     const bookedTimes = storedBookings
+//         .filter(booking => booking.date === today)
+//         .map(booking => booking.time);
+
+//     return allTimes.filter(time => !bookedTimes.includes(time));
+// };
+
+
+/*const initializeTimes = () => []; */
+//const initializeTimes = () => ["17:00", "18:00", "19:00"];
+
+
+
+
+
+
+
+
+
+
 
 const initialTimes = () => {
   return {
